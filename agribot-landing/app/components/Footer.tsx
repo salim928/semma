@@ -51,10 +51,13 @@ export default function Footer() {
                 <Link href="/pricing" className="text-gray-400 hover:text-white transition-colors">Pricing</Link>
               </li>
               <li>
-                <Link href="/blog" className="text-gray-400 hover:text-white transition-colors">Blog</Link>
+                <Link href="/demo" className="text-gray-400 hover:text-white transition-colors">Demo</Link>
               </li>
               <li>
-                <Link href="/support" className="text-gray-400 hover:text-white transition-colors">Support</Link>
+                <Link href="/contact" className="text-gray-400 hover:text-white transition-colors">Contact</Link>
+              </li>
+              <li>
+                <Link href="/faq" className="text-gray-400 hover:text-white transition-colors">FAQ</Link>
               </li>
             </ul>
           </motion.div>
@@ -101,11 +104,21 @@ export default function Footer() {
           </motion.div>
         </div>
 
-        <div className="border-t border-gray-800 mt-12 pt-8 text-center">
-          <p className="text-gray-400">
-            &copy; 2024 SEMMA-AI. All rights reserved. 
-            Built with for Ghana&apos;s farmers.
-          </p>
+        <div className="border-t border-gray-800 mt-12 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <p className="text-gray-400 text-center md:text-left">
+              &copy; 2024 SEMMA-AI. All rights reserved. 
+              Built with ❤️ for Ghana&apos;s farmers.
+            </p>
+            <div className="flex space-x-6">
+              <Link href="/privacy" className="text-gray-400 hover:text-white transition-colors text-sm">
+                Privacy Policy
+              </Link>
+              <Link href="/terms" className="text-gray-400 hover:text-white transition-colors text-sm">
+                Terms of Service
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
