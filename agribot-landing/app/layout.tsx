@@ -7,6 +7,7 @@ import GoogleAnalytics from './components/GoogleAnalytics'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://semma-ai.vercel.app'),
   title: 'SEMMA-AI - Smarter Advice. Bigger Harvests.',
   description: 'AI-powered agricultural platform revolutionizing farming in Ghana with smart insights, digital marketplace, and community features.',
   keywords: 'agriculture, AI, farming, Ghana, marketplace, agritech, SEMMA-AI',
