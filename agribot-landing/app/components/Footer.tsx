@@ -1,0 +1,113 @@
+// app/components/Footer.tsx
+'use client'
+
+import { motion } from 'framer-motion'
+import Link from 'next/link'
+import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react'
+
+export default function Footer() {
+  return (
+    <footer className="bg-gray-900 text-white">
+      <div className="max-w-7xl mx-auto px-6 py-16">
+        <div className="grid md:grid-cols-4 gap-8">
+          {/* Brand */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <div className="flex items-center space-x-2 mb-4">
+              <div className="w-8 h-8 rounded-lg flex items-center justify-center" style={{background: 'linear-gradient(to right, rgb(132 204 22), rgb(234 179 8))'}}>
+                <span className="text-white font-bold">S</span>
+              </div>
+              <span className="text-2xl font-bold">SEMMA-AI</span>
+            </div>
+            <p className="text-gray-400 mb-4">
+              Smarter advice. Bigger harvests. Empowering Ghana&apos;s farmers with AI-driven agricultural solutions.
+            </p>
+            <div className="flex space-x-4">
+              {[Facebook, Twitter, Instagram, Linkedin].map((Icon, index) => (
+                <Icon key={index} className="w-5 h-5 text-gray-400 hover:text-lime-500 cursor-pointer transition-colors" />
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Quick Links */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+          >
+            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link href="/about" className="text-gray-400 hover:text-white transition-colors">About Us</Link>
+              </li>
+              <li>
+                <Link href="/features" className="text-gray-400 hover:text-white transition-colors">Features</Link>
+              </li>
+              <li>
+                <Link href="/pricing" className="text-gray-400 hover:text-white transition-colors">Pricing</Link>
+              </li>
+              <li>
+                <Link href="/blog" className="text-gray-400 hover:text-white transition-colors">Blog</Link>
+              </li>
+              <li>
+                <Link href="/support" className="text-gray-400 hover:text-white transition-colors">Support</Link>
+              </li>
+            </ul>
+          </motion.div>
+
+          {/* Services */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+          >
+            <h3 className="text-lg font-semibold mb-4">Services</h3>
+            <ul className="space-y-2">
+              {['AI Advisory', 'Marketplace', 'Community', 'Analytics', 'Training'].map((service) => (
+                <li key={service}>
+                  <a href="#" className="text-gray-400 hover:text-white transition-colors">{service}</a>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+
+          {/* Contact */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.3 }}
+          >
+            <h3 className="text-lg font-semibold mb-4">Contact</h3>
+            <div className="space-y-2">
+              <div className="flex items-center space-x-2">
+                <Mail className="w-4 h-4 text-lime-500" />
+                <span className="text-gray-400">info@semma-ai.com</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Phone className="w-4 h-4 text-lime-500" />
+                <span className="text-gray-400">+233 557 553 975</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <MapPin className="w-4 h-4 text-lime-500" />
+                <span className="text-gray-400">Accra, Ghana</span>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+
+        <div className="border-t border-gray-800 mt-12 pt-8 text-center">
+          <p className="text-gray-400">
+            &copy; 2024 SEMMA-AI. All rights reserved. 
+            Built with for Ghana&apos;s farmers.
+          </p>
+        </div>
+      </div>
+    </footer>
+  )
+}
