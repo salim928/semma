@@ -187,8 +187,18 @@ export default function SupportPage() {
       />
 
       {/* Support Channels */}
-      <section className="py-20">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="relative py-20 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <div 
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: 'url(https://images.unsplash.com/photo-1593113598332-cd288d649433?w=1920&h=1080&fit=crop&q=80)',
+            }}
+          />
+          <div className="absolute inset-0 bg-white/88" />
+        </div>
+        
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {supportChannels.map((channel, index) => (
               <motion.div
@@ -218,8 +228,18 @@ export default function SupportPage() {
       </section>
 
       {/* Contact Form */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="relative py-20 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <div 
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: 'url(https://images.unsplash.com/photo-1492496913980-501348b61469?w=1920&h=1080&fit=crop&q=80)',
+            }}
+          />
+          <div className="absolute inset-0 bg-gray-50/90" />
+        </div>
+        
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Form */}
             <motion.div
@@ -421,8 +441,18 @@ export default function SupportPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20">
-        <div className="max-w-4xl mx-auto px-6">
+      <section className="relative py-20 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <div 
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: 'url(https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=1920&h=1080&fit=crop&q=80)',
+            }}
+          />
+          <div className="absolute inset-0 bg-white/88" />
+        </div>
+        
+        <div className="relative z-10 max-w-4xl mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}

@@ -6,8 +6,19 @@ import { Download, ArrowRight } from 'lucide-react'
 
 export default function CTA() {
   return (
-    <section className="py-20" style={{background: 'linear-gradient(135deg, rgb(101 163 13), rgb(77 124 15), rgb(234 179 8))'}}>
-      <div className="max-w-4xl mx-auto px-6 text-center">
+    <section className="relative py-20 overflow-hidden">
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0 z-0">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url(https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=1920&h=1080&fit=crop&q=80)',
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-lime-700/90 via-lime-600/90 to-yellow-600/90" />
+      </div>
+
+      <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}

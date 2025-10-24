@@ -113,8 +113,18 @@ export default function PricingPage() {
       />
 
       {/* Pricing Plans */}
-      <section className="py-20">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="relative py-20 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <div 
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: 'url(https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1920&h=1080&fit=crop&q=80)',
+            }}
+          />
+          <div className="absolute inset-0 bg-white/88" />
+        </div>
+        
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
           <div className="grid lg:grid-cols-3 gap-8">
             {plans.map((plan, index) => (
               <motion.div
@@ -291,8 +301,18 @@ export default function PricingPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-20">
-        <div className="max-w-4xl mx-auto px-6">
+      <section className="relative py-20 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <div 
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: 'url(https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=1920&h=1080&fit=crop&q=80)',
+            }}
+          />
+          <div className="absolute inset-0 bg-white/90" />
+        </div>
+        
+        <div className="relative z-10 max-w-4xl mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}

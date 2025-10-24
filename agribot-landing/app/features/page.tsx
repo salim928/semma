@@ -187,8 +187,18 @@ export default function FeaturesPage() {
       ))}
 
       {/* Mobile App Features */}
-      <section className="py-20" style={{background: 'linear-gradient(135deg, rgb(101 163 13), rgb(77 124 15))'}}>
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="relative py-20 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <div 
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: 'url(https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=1920&h=1080&fit=crop&q=80)',
+            }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-lime-700/95 to-lime-600/95" />
+        </div>
+        
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
@@ -237,8 +247,18 @@ export default function FeaturesPage() {
       </section>
 
       {/* Integrations */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="relative py-20 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <div 
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: 'url(https://images.unsplash.com/photo-1593113598332-cd288d649433?w=1920&h=1080&fit=crop&q=80)',
+            }}
+          />
+          <div className="absolute inset-0 bg-gray-50/90" />
+        </div>
+        
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}

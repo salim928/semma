@@ -42,19 +42,19 @@ const team = [
     name: "Dennis",
     role: "CEO & Managing Partner",
     bio: "AI researcher specializing in machine learning applications for agriculture.",
-    image: "/team/sarah.jpg" // Put your image in public/team/sarah.jpg
+    image: "/team/Dennis.jpg" // Put your image in public/team/dennis.jpg
   },
   {
     name: "Sulf Adams",
     role: "CFO & Head of Product",
     bio: "Former farmer turned product manager, bridging the gap between technology and farming.",
-    image: "/team/abdul.jpg" // Put your image in public/team/abdul.jpg
+    image: "team/Sulf.jpg" // Put your image in public/team/sulf.jpg
   },
   {
     name: "Ama Osei",
     role: "CMO & Head of Community",
     bio: "Agricultural extension officer with deep roots in Ghana's farming communities.",
-    image: "/team/ama.jpg" // Put your image in public/team/ama.jpg
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop"
   }
 ]
 
@@ -77,8 +77,18 @@ export default function AboutPage() {
       />
 
       {/* Our Story */}
-      <section className="py-20">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="relative py-20 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <div 
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: 'url(https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=1920&h=1080&fit=crop&q=80)',
+            }}
+          />
+          <div className="absolute inset-0 bg-white/90" />
+        </div>
+        
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
@@ -123,8 +133,18 @@ export default function AboutPage() {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="relative py-20 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <div 
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: 'url(https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1920&h=1080&fit=crop&q=80)',
+            }}
+          />
+          <div className="absolute inset-0 bg-gray-50/92" />
+        </div>
+        
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -161,7 +181,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values */}
-      <section className="py-20">
+      <section className="py-20 bg-gradient-to-br from-lime-50 via-white to-yellow-50">
         <div className="max-w-6xl mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -197,8 +217,18 @@ export default function AboutPage() {
       </section>
 
       {/* Team */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="relative py-20 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <div 
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: 'url(https://images.unsplash.com/photo-1560493676-04071c5f467b?w=1920&h=1080&fit=crop&q=80)',
+            }}
+          />
+          <div className="absolute inset-0 bg-gray-50/90" />
+        </div>
+        
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -226,6 +256,7 @@ export default function AboutPage() {
                   alt={member.name}
                   width={300}
                   height={256}
+                  unoptimized
                   className="w-full h-64 object-cover"
                 />
                 <div className="p-6">

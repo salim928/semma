@@ -7,8 +7,19 @@ import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'luc
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="max-w-7xl mx-auto px-6 py-16">
+    <footer className="relative bg-gray-900 text-white overflow-hidden">
+      {/* Background Image with Dark Overlay */}
+      <div className="absolute inset-0 z-0">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url(https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1920&h=1080&fit=crop&q=80)',
+          }}
+        />
+        <div className="absolute inset-0 bg-gray-900/95" />
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-6 py-16">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Brand */}
           <motion.div

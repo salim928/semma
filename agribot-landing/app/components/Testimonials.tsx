@@ -11,28 +11,39 @@ const testimonials = [
     role: "Rice Farmer, Ashanti Region",
     content: "AgriBOT has revolutionized how I manage my farm. The AI advisory feature helped me increase my yield by 40% this season.",
     rating: 5,
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face"
+    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop"
   },
   {
     name: "Ama Osei",
     role: "Vegetable Farmer, Greater Accra",
     content: "The marketplace feature connected me directly with buyers in Accra. I no longer worry about finding customers for my produce.",
     rating: 5,
-    avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b608?w=100&h=100&fit=crop&crop=face"
+    avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop"
   },
   {
     name: "Abdul Rahman",
     role: "Cattle Farmer, Northern Region",
     content: "The community features allowed me to learn from experienced farmers. The weather alerts have saved my crops multiple times.",
     rating: 5,
-    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
+    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop"
   }
 ]
 
 export default function Testimonials() {
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="relative py-20 overflow-hidden">
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0 z-0">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url(https://images.unsplash.com/photo-1492496913980-501348b61469?w=1920&h=1080&fit=crop&q=80)',
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-white/88 via-lime-50/88 to-white/88" />
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -73,6 +84,7 @@ export default function Testimonials() {
                   alt={testimonial.name}
                   width={48}
                   height={48}
+                  unoptimized
                   className="w-12 h-12 rounded-full mr-4"
                 />
                 <div>

@@ -37,8 +37,19 @@ export default function Newsletter() {
   }
 
   return (
-    <section className="py-20 bg-gradient-to-br from-lime-50 to-yellow-50">
-      <div className="max-w-4xl mx-auto px-6 text-center">
+    <section className="relative py-20 overflow-hidden">
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0 z-0">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url(https://images.unsplash.com/photo-1595272548310-0e0c5b688d76?w=1920&h=1080&fit=crop&q=80)',
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-lime-50/96 to-yellow-50/96" />
+      </div>
+
+      <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}

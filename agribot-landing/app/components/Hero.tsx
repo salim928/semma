@@ -7,9 +7,20 @@ import ThreeScene from './ThreeScene'
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20" style={{background: 'linear-gradient(135deg, rgb(247 254 231), rgb(255 255 255), rgb(254 252 232))'}}>
-      {/* Three.js Background */}
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+      {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url(https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1920&h=1080&fit=crop&q=80)',
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-lime-50/95 via-white/90 to-yellow-50/95" />
+      </div>
+
+      {/* Three.js Background */}
+      <div className="absolute inset-0 z-0 opacity-30">
         <ThreeScene />
       </div>
 
