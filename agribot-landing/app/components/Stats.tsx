@@ -5,9 +5,9 @@ import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 
 const stats = [
-  { label: "Active Farmers", value: 15000, suffix: "+" },
-  { label: "Communities", value: 250, suffix: "+" },
-  { label: "Successful Transactions", value: 50000, suffix: "+" },
+  { label: "Active Farmers", value: 5000, suffix: "+" },
+  { label: "Communities", value: 10, suffix: "+" },
+  { label: "Successful Transactions", value: 500, suffix: "+" },
   { label: "Regions Covered", value: 10, suffix: "/10" },
 ]
 

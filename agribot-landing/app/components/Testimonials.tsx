@@ -9,23 +9,23 @@ const testimonials = [
   {
     name: "Kwame Asante",
     role: "Rice Farmer, Ashanti Region",
-    content: "AgriBOT has revolutionized how I manage my farm. The AI advisory feature helped me increase my yield by 40% this season.",
+    content: "Semma has revolutionized how I manage my farm. The AI advisory feature helped me increase my yield by 40% this season.",
     rating: 5,
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop"
+    avatar: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop&crop=face"
   },
   {
     name: "Ama Osei",
     role: "Vegetable Farmer, Greater Accra",
     content: "The marketplace feature connected me directly with buyers in Accra. I no longer worry about finding customers for my produce.",
     rating: 5,
-    avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop"
+    avatar: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400&h=400&fit=crop&crop=face"
   },
   {
     name: "Abdul Rahman",
     role: "Cattle Farmer, Northern Region",
     content: "The community features allowed me to learn from experienced farmers. The weather alerts have saved my crops multiple times.",
     rating: 5,
-    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop"
+    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
   }
 ]
 
@@ -53,8 +53,8 @@ export default function Testimonials() {
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="gradient-text">What Farmers Say</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Real stories from farmers who are transforming their agricultural practices with AgriBOT.
+          <p className="text-xl text-grey-900 max-w-3xl mx-auto">
+            Real stories from farmers who are transforming their agricultural practices with Semma-AI.
           </p>
         </motion.div>
 

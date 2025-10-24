@@ -382,8 +382,8 @@ export default function SupportPage() {
                   <div>
                     <h3 className="font-semibold mb-1">Phone</h3>
                     <p className="text-gray-600">
-                      Main: +233 30 123 4567<br />
-                      WhatsApp: +233 24 123 4567
+                      Main: +233 20 887 8742<br />
+                      WhatsApp: +233 20 821 6754
                     </p>
                   </div>
                 </div>
@@ -409,9 +409,8 @@ export default function SupportPage() {
                   <div>
                     <h3 className="font-semibold mb-1">Business Hours</h3>
                     <p className="text-gray-600">
-                      Monday - Friday: 8:00 AM - 6:00 PM<br />
-                      Saturday: 9:00 AM - 3:00 PM<br />
-                      Sunday: Closed
+                      Monday - Friday: 9:00 AM - 4:00 PM<br />
+                      
                     </p>
                   </div>
                 </div>
