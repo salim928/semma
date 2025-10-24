@@ -124,7 +124,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 text-center md:text-left">
               &copy; 2024 SEMMA-AI. All rights reserved. 
-              Built with for Africa &amp; Ghana&apos;s farmers.
+              Built for Africa &amp; Ghana&apos;s farmers.
             </p>
             <div className="flex space-x-6">
               <Link href="/privacy" className="text-gray-400 hover:text-white transition-colors text-sm">
