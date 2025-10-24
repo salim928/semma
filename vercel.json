@@ -1,6 +1,0 @@
-{
-  "buildCommand": "cd agribot-landing && npm install && npm run build",
-  "outputDirectory": "agribot-landing/.next",
-  "framework": "nextjs",
-  "installCommand": "cd agribot-landing && npm install"
-}
