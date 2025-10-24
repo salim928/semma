@@ -101,8 +101,8 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900">Call Us</h3>
-                  <p className="text-gray-600">+233 (0) 24 123 4567</p>
-                  <p className="text-gray-600">+233 (0) 20 987 6543</p>
+                  <p className="text-gray-600">+233 (0) 20 887 8742</p>
+                  <p className="text-gray-600">+233 (0) 20 821 6754</p>
                 </div>
               </div>
 
