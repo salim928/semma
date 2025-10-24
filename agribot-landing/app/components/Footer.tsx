@@ -3,6 +3,7 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react'
 
 export default function Footer() {
@@ -28,9 +29,13 @@ export default function Footer() {
             viewport={{ once: true }}
           >
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 rounded-lg flex items-center justify-center" style={{background: 'linear-gradient(to right, rgb(132 204 22), rgb(234 179 8))'}}>
-                <span className="text-white font-bold">S</span>
-              </div>
+              <Image
+                src="/semma-logo.png"
+                alt="SEMMA-AI Logo"
+                width={32}
+                height={32}
+                className="w-8 h-8"
+              />
               <span className="text-2xl font-bold">SEMMA-AI</span>
             </div>
             <p className="text-gray-400 mb-4">

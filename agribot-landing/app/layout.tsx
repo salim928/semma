@@ -11,10 +11,18 @@ export const metadata: Metadata = {
   title: 'SEMMA-AI - Smarter Advice. Bigger Harvests.',
   description: 'AI-powered agricultural platform revolutionizing farming in Ghana with smart insights, digital marketplace, and community features.',
   keywords: 'agriculture, AI, farming, Ghana, marketplace, agritech, SEMMA-AI',
+  icons: {
+    icon: [
+      { url: '/semma-logo.png', sizes: '32x32', type: 'image/png' },
+      { url: '/semma-logo.png', sizes: '16x16', type: 'image/png' },
+    ],
+    apple: '/semma-logo.png',
+    shortcut: '/semma-logo.png',
+  },
   openGraph: {
     title: 'SEMMA-AI - Smarter Advice. Bigger Harvests.',
     description: 'AI-powered agricultural platform revolutionizing farming in Ghana with smart insights and digital marketplace.',
-    images: ['/semma-logo.svg'],
+    images: ['/semma-logo.png'],
   },
 }
 
