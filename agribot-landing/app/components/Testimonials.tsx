@@ -11,21 +11,21 @@ const testimonials = [
     role: "Rice Farmer, Ashanti Region",
     content: "Semma has revolutionized how I manage my farm. The AI advisory feature helped me increase my yield by 40% this season.",
     rating: 5,
-    avatar: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop"
+    avatar: "https://images.unsplash.com/photo-1531384370597-8590413be50a?w=400&h=400&fit=crop"
   },
   {
     name: "Ama Osei",
     role: "Vegetable Farmer, Greater Accra",
     content: "The marketplace feature connected me directly with buyers in Accra. I no longer worry about finding customers for my produce.",
     rating: 5,
-    avatar: "https://images.unsplash.com/photo-1566753323558-f4e0952af115?w=400&h=400&fit=crop"
+    avatar: "https://images.unsplash.com/photo-1485893086445-ed75865251e0?w=400&h=400&fit=crop"
   },
   {
     name: "Abdul Rahman",
     role: "Cattle Farmer, Northern Region",
     content: "The community features allowed me to learn from experienced farmers. The weather alerts have saved my crops multiple times.",
     rating: 5,
-    avatar: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop"
+    avatar: "https://images.unsplash.com/photo-1504593811423-6dd665756598?w=400&h=400&fit=crop"
   }
 ]
 
