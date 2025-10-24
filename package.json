@@ -1,13 +1,10 @@
 {
-  "name": "semma-ai-root",
+  "name": "semma-ai-monorepo",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "cd agribot-landing && npm run build",
+    "build": "cd agribot-landing && npm install && npm run build",
     "dev": "cd agribot-landing && npm run dev",
     "start": "cd agribot-landing && npm run start"
-  },
-  "workspaces": [
-    "agribot-landing"
-  ]
+  }
 }
