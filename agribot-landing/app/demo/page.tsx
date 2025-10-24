@@ -11,14 +11,26 @@ export const metadata = {
 
 export default function DemoPage() {
   return (
-    <main className="min-h-screen bg-gray-50">
-      <Navigation />
-      <PageHeader 
-        title="Experience SEMMA-AI"
-        subtitle="Schedule a personalized demo and see the future of farming"
-      />
+    <main className="min-h-screen relative overflow-hidden">
+      {/* Background Image with Overlay */}
+      <div className="fixed inset-0 z-0">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url(https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1920&h=1080&fit=crop&q=80)',
+          }}
+        />
+        <div className="absolute inset-0 bg-gray-50/92" />
+      </div>
       
-      <div className="max-w-4xl mx-auto px-6 py-16">
+      <div className="relative z-10">
+        <Navigation />
+        <PageHeader 
+          title="Experience SEMMA-AI"
+          subtitle="Schedule a personalized demo and see the future of farming"
+        />
+        
+        <div className="max-w-4xl mx-auto px-6 py-16">
         <DemoRequest />
         
         {/* What to Expect */}
@@ -105,6 +117,7 @@ export default function DemoPage() {
       </div>
       
       <Footer />
+      </div>
     </main>
   )
 }

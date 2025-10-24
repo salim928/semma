@@ -52,14 +52,26 @@ export default function ContactPage() {
   }
 
   return (
-    <main className="min-h-screen bg-gray-50">
-      <Navigation />
-      <PageHeader 
-        title="Contact Us"
-        subtitle="Get in touch with our team of agricultural experts"
-      />
+    <main className="min-h-screen relative overflow-hidden">
+      {/* Background Image with Overlay */}
+      <div className="fixed inset-0 z-0">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url(https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=1920&h=1080&fit=crop&q=80)',
+          }}
+        />
+        <div className="absolute inset-0 bg-gray-50/90" />
+      </div>
       
-      <div className="max-w-7xl mx-auto px-6 py-16">
+      <div className="relative z-10">
+        <Navigation />
+        <PageHeader 
+          title="Contact Us"
+          subtitle="Get in touch with our team of agricultural experts"
+        />
+        
+        <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div className="space-y-8">
@@ -253,6 +265,7 @@ export default function ContactPage() {
       </div>
       
       <Footer />
+      </div>
     </main>
   )
 }
