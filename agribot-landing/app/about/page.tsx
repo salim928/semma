@@ -42,13 +42,13 @@ const team = [
     name: "Dennis",
     role: "CEO & Managing Partner",
     bio: "AI researcher specializing in machine learning applications for agriculture.",
-    image: "/team/Dennis.jpg" // Put your image in public/team/dennis.jpg
+    image: "/team/dennis.jpg" // Put your image in public/team/dennis.jpg
   },
   {
     name: "Sulf Adams",
     role: "CFO & Head of Product",
     bio: "Former farmer turned product manager, bridging the gap between technology and farming.",
-    image: "team/Sulf.jpg" // Put your image in public/team/sulf.jpg
+    image: "team/sulf.jpg" // Put your image in public/team/sulf.jpg
   },
   {
     name: "Ama Osei",
@@ -60,8 +60,8 @@ const team = [
 
 const stats = [
   { number: "2019", label: "Founded" },
-  { number: "15K+", label: "Farmers Served" },
-  { number: "250+", label: "Communities" },
+  { number: "5K+", label: "Farmers Served" },
+  { number: "50+", label: "Communities" },
   { number: "10", label: "Regions Covered" }
 ]
 
