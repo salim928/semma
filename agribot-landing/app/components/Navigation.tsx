@@ -29,7 +29,7 @@ export default function Navigation() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <Image
-              src="/semma-logo.png"
+              src="/semma-logo.svg"
               alt="SEMMA-AI Logo"
               width={40}
               height={40}

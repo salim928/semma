@@ -30,7 +30,7 @@ export default function Footer() {
           >
             <div className="flex items-center space-x-2 mb-4">
               <Image
-                src="/semma-logo.png"
+                src="/semma-logo.svg"
                 alt="SEMMA-AI Logo"
                 width={32}
                 height={32}
